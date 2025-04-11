@@ -38,7 +38,7 @@ fun Calc_screen(navController: NavHostController) {
         modifier = Modifier
             .fillMaxSize()
             .background(Color.White)){
-        Text(text = "Answer here!!!",
+        Text(text = answer,
             color = Color.Black,
             fontSize = 30.sp,
             fontFamily = FontFamily.Monospace)
@@ -51,7 +51,7 @@ fun Calc_screen(navController: NavHostController) {
 
 
         OutlinedTextField(value =secondnu ,onValueChange={secondnu=it},
-            label = {Text(text = "Enter First No.",
+            label = {Text(text = "Enter Second No.",
                 fontSize = 30.sp,
                 color = Color.Black,
                 fontFamily = FontFamily.Monospace)},
